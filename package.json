@@ -15,12 +15,10 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-logger": "0.0.3",
-    "jade": "^1.11.0",
     "jsonwebtoken": "^7.4.3",
     "lodash": "^4.17.4",
     "mysql": "^2.13.0",
     "npm": "^5.7.1",
-    "redis": "^2.8.0",
     "request": "^2.85.0",
     "require-dir": "^0.3.1",
     "sequelize": "^3.30.4"

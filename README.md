@@ -48,13 +48,13 @@ node server.js
  
 # Folder Struchture
 
-Entry point: server.js
-routes folder is there to manage routes based on the functionality.
-controller folder is there to manage entry code for each end point.
-config folder holds the configs for db, port, api key etc.
-google folder hold the functions to call google API's.
-migrations folder is there to support databse creation.
-models folder have database table schemas and support sequelize functions.
+ - Entry point: server.js
+ - routes folder is there to manage routes based on the functionality.
+ - controller folder is there to manage entry code for each end point.
+ - config folder holds the configs for db, port, api key etc.
+ - google folder hold the functions to call google API's.
+ - migrations folder is there to support databse creation.
+ - models folder have database table schemas and support sequelize functions.
 
 # End Points
 
