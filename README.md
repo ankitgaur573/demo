@@ -72,11 +72,11 @@ models folder have database table schemas and support sequelize functions.
 
  3. Search: Allows you to search hospitals, restaurants etc types around a location given by
  latitude and longitude.
-   Radius need to be provided to guide the search. (See routes/places.js)
-   A reequest made by a user is cached and the data is served from the db itself if the user makes
+    - Radius need to be provided to guide the search. (See routes/places.js)
+    - A request made by a user is cached and the data is served from the db itself if the user makes
    same request again.
-   Caching should be done by redis ideally but have been done by MySQL so as to not use two db's.
-   Note: Only this api is applied with caching in the demo.
+    - Caching should be done by redis ideally but have been done by MySQL so as to not use two db's.
+    - Note: Only this api is applied with caching in the demo.
 
  4. Geocode: This end point allows you to find the latitude and longitude of an address if you
  dont have them to give to the search API. (See routes/places.js)
