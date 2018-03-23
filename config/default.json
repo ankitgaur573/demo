@@ -1,0 +1,6 @@
+{
+  "PORT": 3000,
+  "JWTSECRET": "ihdkslldisa755447ssaksus",
+  "key": "AIzaSyC2fPrHfs_VeiHVE9i_ErTEvTwfReelMbk",
+  "excludedRoutes": [ "/", "/users/registerapi", "/users/loginapi"]
+}
