@@ -6,6 +6,5 @@ module.exports = function(cntrls, models) {
     Router.get('/search/:lat/:long/:radius/:type', cntrls.GoogleController(cntrls, models).search);
     Router.post('/favourite', cntrls.GoogleController(cntrls, models).addFavourite);
     Router.get('/favourite', cntrls.GoogleController(cntrls, models).getFavourite);
-    Router.get('/detail/:placeId', cntrls.GoogleController(cntrls, models).getDetails);
     return Router;
 };

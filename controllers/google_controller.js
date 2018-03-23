@@ -9,7 +9,6 @@ var GoogleController = function (cntrls, models) {
                 if (error){
                     res.status(400).send({error: error});
                 } else {
-                    console.log(geocode);
                     res.status(200).send({geocode: geocode});
                 }
             });

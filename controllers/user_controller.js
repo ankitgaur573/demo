@@ -42,15 +42,12 @@ var UserController = function (cntrls, models) {
                 name = req.body.name,
                 email = req.body.email,
                 password = req.body.password;
-            console.log(bodyParams)
-            console.log("email", email);
             models.Users.findOne({where: {email: email}}).then(function (user) {
                 if (user) {
                     bcrypt.compare(password, user.password, function(err, ress) {
                         if(!ress){
                             res.status(406).send({ error: "Email and Password does not match." });
                         }else{
-                            // console.log(user);
                             var token=jwt.sign(user.dataValues ,config.JWTSECRET,{
                                 expiresIn:'24h'
                             });
