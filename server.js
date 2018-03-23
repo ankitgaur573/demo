@@ -36,7 +36,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', function(req, res) {
-    res.render('index', { title: 'Demo' });
+    res.status(200).send({Message: "Demo APIs"});
 });
 
 var controllers = require('./controllers');
